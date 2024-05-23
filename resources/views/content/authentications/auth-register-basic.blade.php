@@ -48,11 +48,11 @@ $customizerHidden = 'customizer-hide';
 
         <form id="formAuthentication" class="mb-3" action="{{url('/')}}" method="GET">
           <div class="form-floating form-floating-outline mb-3">
-            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" autofocus>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Entre com seu nome de usuário" autofocus>
             <label for="username">Nome Completo</label>
           </div>
           <div class="form-floating form-floating-outline mb-3">
-            <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Entre com seu email">
             <label for="email">Email</label>
           </div>
           <div class="mb-3 form-password-toggle">
@@ -74,20 +74,20 @@ $customizerHidden = 'customizer-hide';
               </label>
             </div>
           </div>
-          <button class="btn btn-primary d-grid w-100">
+          <button class="btn btn-primary d-grid w-100"  style="background-color: #195128";>
             Inscrever-se
           </button>
         </form>
 
         <p class="text-center">
-          <span>Already have an account?</span>
+          <span>Ja possui uma conta?</span>
           <a href="{{url('auth/login-basic')}}">
-            <span>Sign in instead</span>
+            <span>Faça Login</span>
           </a>
         </p>
 
         <div class="divider my-4">
-          <div class="divider-text">or</div>
+          <div class="divider-text">ou</div>
         </div>
 
         <div class="d-flex justify-content-center gap-2">

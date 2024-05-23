@@ -62,7 +62,18 @@ $container = ($configData['contentLayout'] === 'compact') ? 'container-xxl' : 'c
           @else
           <div class="{{$container}} flex-grow-1 container-p-y">
             @endif
-
+            @if(session()->get('global-success'))
+              <div class="alert alert-success msg-status-success alert-dismissible fade show msg" role="alert">
+                <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
+                Sucesso!
+              </div>
+            @endif
+            @if(session()->get('global-erro'))
+              <div class="alert alert-danger msg-status-erro alert-dismissible fade show msg" role="alert">
+                  <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
+                  Não foi possível concluir a operação!
+              </div>
+            @endif
             @yield('content')
 
           </div>

@@ -73,7 +73,7 @@ $customizerHidden = 'customizer-hide';
                             </a>
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-success d-grid w-100" type="submit">Sign in</button>
+                            <button class="btn btn-success d-grid w-100" type="submit">Entrar</button>
                         </div>
                     </form>
                     <p class="text-center">

@@ -33,8 +33,12 @@ Route::get('/pages/misc-error', [MiscError::class, 'index'])->name('pages-misc-e
 // authentication
 Route::get('/auth/login-basic', [LoginBasic::class, 'index'])->name('auth-login-basic');
 Route::get('/auth/register-basic', [RegisterBasic::class, 'index'])->name('auth-register-basic');
-Route::get('/', [AlunosController::class, 'index']);
+
+
+/*Route::get('/', [AlunosController::class, 'index']);
 Route::post('/addcontact', [AlunosController::class, 'add']);
 Route::get('/delete/{id}', [AlunosController::class, 'delete']);
 Route::get('/edit/{id}', [AlunosController::class, 'edit']);
-Route::post('/edit/{id}', [AlunosController::class, 'update']);
+Route::post('/edit/{id}', [AlunosController::class, 'update']);*/
+
+Route::prefix('admin')->group(base_path('routes/admin/usuarios.php'));

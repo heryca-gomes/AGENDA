@@ -7,7 +7,7 @@ use App\Models\Alunos;
 
 class AlunosController extends Controller
 {
-    public function index(Request $req)
+    public function index()
     {
         $alunos = Alunos::all();
         return  view('create')->with("alunos", $alunos);
@@ -40,6 +40,6 @@ class AlunosController extends Controller
             'phone' => $req->phone,
             'email' => $req->email,
         ]);
-        return redirect()->back();
+        return $this->index();
     }
 }
