@@ -20,5 +20,5 @@ package-lock.json
 # But not these files...
 !/public/assets/*
 /public/assets/js
-/public/assets/css
+#/public/assets/css
 /public/assets/vendor
