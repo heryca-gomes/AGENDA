@@ -26,7 +26,7 @@
   --bs-secondary: #6d788d;
   --bs-success: #195128;
   --bs-info: #26c6f9;
-  --bs-warning: #fdb528;
+  --bs-warning: #ffce5c;
   --bs-danger: #ff4d49;
   --bs-light: #dfdfe3;
   --bs-dark: #4b4b4b;
@@ -8309,7 +8309,7 @@ label.btn {
 
 .btn-warning {
   color: #fff;
-  background-color: #fdb528;
+  background-color: #ffce5c !important;
   border-color: #fdb528;
 }
 .btn-warning:hover {

@@ -2,7 +2,7 @@
 $containerFooter = ($configData['contentLayout'] === 'compact') ? 'container-xxl' : 'container-fluid';
 @endphp
 
-<!-- Footer-->
+<!-- Footer
 <footer class="content-footer footer bg-footer-theme">
   <div class="{{ $containerFooter }}">
     <div class="footer-container d-flex align-items-center justify-content-between py-3 flex-md-row flex-column">
@@ -19,4 +19,4 @@ $containerFooter = ($configData['contentLayout'] === 'compact') ? 'container-xxl
     </div>
   </div>
 </footer>
-<!--/ Footer-->
+</ Footer-->

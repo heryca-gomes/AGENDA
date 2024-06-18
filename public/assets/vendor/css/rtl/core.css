@@ -8072,8 +8072,8 @@ label.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #195128;
-  border-color: #195128;
+  background-color: #27ae60;
+  border-color: #27ae60;
 }
 .btn-success:hover {
   color: #fff !important;
@@ -8336,8 +8336,8 @@ label.btn {
 
 .btn-warning {
   color: #fff;
-  background-color: #fdb528;
-  border-color: #fdb528;
+  background-color: #ffce5c;
+  border-color: #ffce5c;
 }
 .btn-warning:hover {
   color: #fff !important;

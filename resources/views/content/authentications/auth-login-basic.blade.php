@@ -45,9 +45,10 @@ $customizerHidden = 'customizer-hide';
                     </a>
                 </div>
                 <div class="card-body mt-2">
-                    <form id="formAuthentication" class="mb-3" action="{{url('/')}}" method="GET">
+                    <form id="formAuthentication" class="mb-3" action="{{url('sign-in')}}" method="POST">
+                        @csrf
                         <div class="form-floating form-floating-outline mb-3">
-                            <input type="text" class="form-control" id="email" name="email-username" placeholder="Entrar com email ou usuario" autofocus>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Entrar com email ou usuario" autofocus>
                             <label for="email">Email ou Usuario</label>
                         </div>
                         <div class="mb-3">

@@ -8,6 +8,7 @@ use App\Http\Controllers\pages\MiscError;
 use App\Http\Controllers\authentications\LoginBasic;
 use App\Http\Controllers\authentications\RegisterBasic;
 use App\Http\Controllers\AlunosController;// Add this line
+use App\Http\Controllers\Auth\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,14 @@ use App\Http\Controllers\AlunosController;// Add this line
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 // Main Page Route
-Route::get('/', [HomePage::class, 'index'])->name('pages-home');
+//Route::get('/', [HomePage::class, 'index'])->name('pages-home');
+Route::post('sign-in', [AuthController::class, 'Authenticate'])->name('sign-in');
+
+Route::get('/', function(){
+    return redirect()->route('auth-login-basic');
+});
+
 Route::get('/page-2', [Page2::class, 'index'])->name('pages-page-2');
 
 // locale

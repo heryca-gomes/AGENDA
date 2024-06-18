@@ -1288,13 +1288,14 @@ li.ui-timepicker-selected,
 }
 
 .bg-menu-theme {
-  background-color: #086319 !important;
-  color: #636578;
+  background-color: #27ae60 !important;
+  color: #fff5eb;
 }
 .bg-menu-theme .menu-link,
 .bg-menu-theme .menu-horizontal-prev,
 .bg-menu-theme .menu-horizontal-next {
   color: #fff;
+  font-weight: 100 !important;
 }
 .bg-menu-theme .menu-link:hover, .bg-menu-theme .menu-link:focus,
 .bg-menu-theme .menu-horizontal-prev:hover,
