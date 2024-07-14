@@ -12,7 +12,7 @@ class form extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public $usuario = null)
+    public function __construct(public $usuario = null, public $tipos)
     {
         //
     }
@@ -22,9 +22,6 @@ class form extends Component
      */
     public function render(): View|Closure|string
     {
-        $tipos = TipoUsuario::all();
-
-        return view('components.admin.usuarios.form')
-            ->with('tipos', $tipos);
+        return view('components.admin.usuarios.form');
     }
 }

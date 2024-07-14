@@ -13,7 +13,7 @@
             <div class="modal-body">
                 <form action="{{ route('usuario.store') }}" method="POST">
                     @csrf
-                    <x-admin.usuarios.form />
+                    <x-admin.usuarios.form :tipos="$tipos"/>
                 </form>
             </div>
         </div>

@@ -24,9 +24,9 @@
   --bs-gray-50: rgba(76, 78, 100, 0.03);
   --bs-primary: #666cff;
   --bs-secondary: #6d788d;
-  --bs-success: #195128;
+  --bs-success: #72e128;
   --bs-info: #26c6f9;
-  --bs-warning: #ffce5c;
+  --bs-warning: #fdb528;
   --bs-danger: #ff4d49;
   --bs-light: #dfdfe3;
   --bs-dark: #4b4b4b;
@@ -8050,8 +8050,8 @@ label.btn {
 }
 .btn-success:hover {
   color: #fff !important;
-  background-color: #618e7c !important;
-  border-color: #618e7c !important;
+  background-color: #64c623 !important;
+  border-color: #64c623 !important;
 }
 .btn-check:focus + .btn-success, .btn-success:focus, .btn-success.focus {
   color: #fff;
@@ -8309,7 +8309,7 @@ label.btn {
 
 .btn-warning {
   color: #fff;
-  background-color: #ffce5c !important;
+  background-color: #fdb528;
   border-color: #fdb528;
 }
 .btn-warning:hover {

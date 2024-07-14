@@ -23,7 +23,7 @@ class create extends Component
     public function render(): View|Closure|string
     {
         $tipos = TipoUsuario::all();
-
+        
         return view('components.admin.usuarios.create')
             ->with('tipos', $tipos);
     }

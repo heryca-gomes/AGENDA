@@ -23,7 +23,7 @@ class edit extends Component
     public function render(): View|Closure|string
     {
         $tipos = TipoUsuario::all();
-
+        
         return view('components.admin.usuarios.edit')
             ->with('tipos', $tipos);
     }

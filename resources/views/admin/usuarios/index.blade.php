@@ -8,7 +8,7 @@
                     <h5>Listando usuários cadastrados</h5>
                 </div>
                 <div class="col-md-2">
-                    <x-admin.usuarios.create />
+                    <x-admin.usuarios.create :tipos="$tipos"/>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
                                 <td>{{ $usuario->email }}</td>
                                 <td>{{ $usuario->acesso->descricao }}</td>
                                 <td>
-                                    <x-admin.usuarios.edit :usuario="$usuario" />
+                                    <x-admin.usuarios.edit :usuario="$usuario" :tipos="$tipos"/>
                                 </td>
                             </tr>
                         @endforeach

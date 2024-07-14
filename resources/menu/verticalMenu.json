@@ -12,6 +12,13 @@
       "icon": "menu-icon tf-icons mdi mdi-account-outline",
       "slug": "auth-register-basic",
       "target": ""
+    },
+    {
+      "url": "/admin/alunos/show",
+      "name": "Alunos",
+      "icon": "menu-icon tf-icons mdi mdi-account-outline",
+      "slug": "auth-register-basic",
+      "target": ""
     }
   ]
 }

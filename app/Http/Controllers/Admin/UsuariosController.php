@@ -19,7 +19,7 @@ class UsuariosController extends Controller
         $usuarios = User::all();
 
         return view('admin.usuarios.index')
-            ->with('tipoAcesso', $tipoAcesso)
+            ->with('tipos', $tipoAcesso)
             ->with('usuarios', $usuarios);
     }
 
