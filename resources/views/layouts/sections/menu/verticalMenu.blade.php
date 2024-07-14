@@ -1,21 +1,21 @@
 @php
-$configData = Helper::appClasses();
+    $configData = Helper::appClasses();
 @endphp
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
 
   <!-- ! Hide app brand if navbar-full -->
-  @if(!isset($navbarFull))
-  <div class="app-brand demo">
-    <a href="{{url('/')}}" class="app-brand-link">
-      <img src="{{asset('assets/img/logo.png')}}" alt="brand" class="app-brand-logo" style="width: 80%">
-    </a>
+    @if(!isset($navbarFull))
+    <div class="app-brand demo">
+        <a href="{{url('/')}}" class="app-brand-link">
+            <img src="{{asset('assets/img/logo.png')}}" alt="brand" class="app-brand-logo" style="width: 80%">
+        </a>
 
-    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-      <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
-    </a>
-  </div>
-  @endif
+        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
+        </a>
+    </div>
+    @endif
 
   <div class="menu-inner-shadow"></div>
 

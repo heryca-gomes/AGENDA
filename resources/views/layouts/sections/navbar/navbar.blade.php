@@ -73,7 +73,7 @@ $navbarDetached = ($navbarDetached ?? '');
         <li class="nav-item navbar-dropdown dropdown-user dropdown">
           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
             <div class="avatar avatar-online">
-              <img src="{{ Auth::user() ? Auth::user()->profile_photo_url : asset('assets/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle">
+              <img src="{{ Auth::user()->profile_photo_url ? Auth::user()->profile_photo_url : asset('assets/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle">
             </div>
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -82,7 +82,8 @@ $navbarDetached = ($navbarDetached ?? '');
                 <div class="d-flex">
                   <div class="flex-shrink-0 me-3">
                     <div class="avatar avatar-online">
-                      <img src="{{ Auth::user() ? Auth::user()->profile_photo_url : asset('assets/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle">
+                      {{-- <img src="{{ Auth::user() ? Auth::user()->profile_photo_url : asset('assets/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle"> --}}
+                      <img src="{{ asset('assets/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle">
                     </div>
                   </div>
                   <div class="flex-grow-1">
@@ -93,7 +94,9 @@ $navbarDetached = ($navbarDetached ?? '');
                       John Doe
                       @endif
                     </span>
-                    <small class="text-muted">Admin</small>
+                    <small class="text-muted">
+                      {{ Auth::user()->acesso->descricao ?? ''}}
+                    </small>
                   </div>
                 </div>
               </a>
@@ -104,7 +107,7 @@ $navbarDetached = ($navbarDetached ?? '');
             <li>
               <a class="dropdown-item" href="{{ Route::has('profile.show') ? route('profile.show') : 'javascript:void(0);' }}">
                 <i class="mdi mdi-account-outline me-2"></i>
-                <span class="align-middle">My Profile</span>
+                <span class="align-middle">Meu perfil</span>
               </a>
             </li>
             @if (Auth::check() && Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -115,12 +118,6 @@ $navbarDetached = ($navbarDetached ?? '');
               </a>
             </li>
             @endif
-            <li>
-              <a class="dropdown-item" href="javascript:void(0);">
-                <i class="mdi mdi-credit-card-outline me-2"></i>
-                <span class="align-middle">Billing</span>
-              </a>
-            </li>
             @if (Auth::User() && Laravel\Jetstream\Jetstream::hasTeamFeatures())
             <li>
               <div class="dropdown-divider"></div>
@@ -171,7 +168,7 @@ $navbarDetached = ($navbarDetached ?? '');
             <li>
               <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class='mdi mdi-logout me-2'></i>
-                <span class="align-middle">Logout</span>
+                <span class="align-middle">Sair</span>
               </a>
             </li>
             <form method="POST" id="logout-form" action="{{ route('logout') }}">
