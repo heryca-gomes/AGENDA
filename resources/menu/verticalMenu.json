@@ -19,6 +19,13 @@
       "icon": "menu-icon tf-icons mdi mdi-account-outline",
       "slug": "auth-register-basic",
       "target": ""
+    },
+    {
+      "url": "/admin/servidores/show",
+      "name": "Servidores",
+      "icon": "menu-icon tf-icons mdi mdi-account-outline",
+      "slug": "auth-register-basic",
+      "target": ""
     }
   ]
 }

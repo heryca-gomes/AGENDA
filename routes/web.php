@@ -49,3 +49,4 @@ Route::post('/edit/{id}', [AlunosController::class, 'update']);*/
 
 Route::prefix('admin')->group(base_path('routes/admin/usuarios.php'));
 Route::prefix('admin')->group(base_path('routes/admin/alunos.php'));
+Route::prefix('admin')->group(base_path('routes/admin/servidores.php'));
