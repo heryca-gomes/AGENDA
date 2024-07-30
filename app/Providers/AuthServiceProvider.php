@@ -25,6 +25,9 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        /**
+         * verificar se o usuário loado é Administrador
+         */
         Gate::define('isAdmin', function (User $user) {
             return $user->acesso_id === 1;
         });
