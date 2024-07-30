@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Cargo;
+use App\Models\Curso;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\TipoUsuario;
@@ -21,6 +23,8 @@ class DeploySeeder extends Seeder
 
             $this->createTipoUsuario();
             $this->createUser();
+            $this->createCursos();
+            $this->createCargo();
             
             DB::commit();
         } catch(\Exception) {
@@ -29,7 +33,7 @@ class DeploySeeder extends Seeder
     }
 
     /**
-     * Cadastra os tipo de usuário
+     * Cadastra os tipos de usuário
      *
      * @return void
      */
@@ -65,6 +69,38 @@ class DeploySeeder extends Seeder
             'email' => 'admin.agendas@ifnmg',
             'password' => Hash::make('acesso@admin2024'),
             'acesso_id' => 1
+        ]);
+    }
+
+    /**
+     * cadastra os cursos da instituição
+     *
+     * @return void
+     */
+    protected function createCursos()
+    {
+        Curso::create([
+            'descricao' => 'Análise e Desenvolvimento de Sistemas',
+        ]);
+        
+        Curso::create([
+            'descricao' => 'Engenharia Agronômica',
+        ]);
+        
+        Curso::create([
+            'descricao' => 'Processos Gerenciais',
+        ]);
+    }
+
+    /**
+     * Cadastra as opções de cargo dos servidores
+     *
+     * @return void
+     */
+    protected function createCargo()   
+    {
+        Cargo::create([
+            'descricao' => 'Psicólogo(a)'
         ]);
     }
 }
