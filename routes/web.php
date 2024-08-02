@@ -40,8 +40,11 @@ Route::get('/pages/misc-error', [MiscError::class, 'index'])->name('pages-misc-e
 Route::get('/auth/login-basic', [LoginBasic::class, 'index'])->name('auth-login-basic');
 Route::get('/auth/register-basic', [RegisterBasic::class, 'index'])->name('auth-register-basic');
 
-Route::middleware(['admin'], function(){
+//Route::middleware(['admin'], function(){
     Route::prefix('admin')->group(base_path('routes/admin/usuarios.php'));
     Route::prefix('admin')->group(base_path('routes/admin/alunos.php'));
     Route::prefix('admin')->group(base_path('routes/admin/servidores.php'));
-});
+
+//});
+
+Route::prefix('servidores')->group(base_path('routes/servidores/alunos.php'));
