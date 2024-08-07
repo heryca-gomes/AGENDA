@@ -1,31 +1,60 @@
 {
-  "menu": [
-    {
-      "url": "/",
-      "name": "Home",
-      "icon": "menu-icon tf-icons mdi mdi-home-outline",
-      "slug": "pages-home"
-    },
-    {
-      "url": "/admin/usuarios/show",
-      "name": "Usuarios",
-      "icon": "menu-icon tf-icons mdi mdi-account-outline",
-      "slug": "auth-register-basic",
-      "target": ""
-    },
-    {
-      "url": "/admin/alunos/show",
-      "name": "Alunos",
-      "icon": "menu-icon tf-icons mdi mdi-account-outline",
-      "slug": "auth-register-basic",
-      "target": ""
-    },
-    {
-      "url": "/admin/servidores/show",
-      "name": "Servidores",
-      "icon": "menu-icon tf-icons mdi mdi-account-outline",
-      "slug": "auth-register-basic",
-      "target": ""
-    }
-  ]
+    "menu": [
+        {
+            "url": "/admin/usuarios/show",
+            "name": "Usuarios",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "auth-register-basic",
+            "target": "",
+            "visibilidade": 1
+        },
+        {
+            "url": "/admin/alunos/show",
+            "name": "Alunos",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "auth-register-basic",
+            "target": "",
+            "visibilidade": 1
+        },
+        {
+            "url": "/admin/servidores/show",
+            "name": "Servidores",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "auth-register-basic",
+            "target": "",
+            "visibilidade": 1
+        },
+        {
+            "url": "/servidores/minha-agenda",
+            "name": "Minha Agenda",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "auth-register-basic",
+            "target": "",
+            "visibilidade": 2
+        },
+        {
+            "url": "/servidores/horarios",
+            "name": "Horários",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "auth-register-basic",
+            "target": "",
+            "visibilidade": 2
+        },
+        {
+            "url": "/alunos/minha-agenda",
+            "name": "Minha agenda",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "minha-agenda",
+            "target": "",
+            "visibilidade": 3
+        },
+        {
+            "url": "/alunos/horarios",
+            "name": "Horários Psicológa(o)",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "minha-agenda",
+            "target": "",
+            "visibilidade": 3
+        }
+    ]
 }

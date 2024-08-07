@@ -11,6 +11,7 @@ class Servidor extends Model
     protected $table = 'servidores';
 
     protected $fillable = [
+        'id',
         'usuario_id',
         'cargo_id'
     ];

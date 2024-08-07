@@ -48,3 +48,5 @@ Route::get('/auth/register-basic', [RegisterBasic::class, 'index'])->name('auth-
 //});
 
 Route::prefix('servidores')->group(base_path('routes/servidores/alunos.php'));
+Route::prefix('servidores')->group(base_path('routes/servidores/web.php'));
+Route::prefix('alunos')->group(base_path('routes/alunos/web.php'));

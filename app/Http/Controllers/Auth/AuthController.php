@@ -17,12 +17,19 @@ class AuthController extends Controller
  
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
- 
-            return redirect()->route('pages-page-2');
+            $tipoUsuario = Auth::user()->acesso_id;
+            
+            $rota = match($tipoUsuario){
+                1 => 'usuario.index',
+                2 => 'servidor.agenda.index',
+                3 => 'aluno.agenda.index'
+            };
+            
+            return redirect()->route($rota);
         }
  
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
+            'email' => 'Os dados informados não foram encontrados em nossa base dados!',
         ])->onlyInput('email');
     }
 }
