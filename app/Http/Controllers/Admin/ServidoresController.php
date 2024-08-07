@@ -47,7 +47,8 @@ class ServidoresController extends Controller
         try {
             DB::beginTransaction();
             
-            $usuario = $this->usuariosService->store($request, 3);
+            // 2 se refere ao tipo de acesso como servidor
+            $usuario = $this->usuariosService->store($request, 2);
             
             $servidor = Servidor::create([
                 'usuario_id' => $usuario->id,

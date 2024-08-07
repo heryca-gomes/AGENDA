@@ -8,7 +8,6 @@
                     <h5>Listando usuários cadastrados</h5>
                 </div>
                 <div class="col-md-2">
-                    <x-admin.usuarios.create :tipos="$tipos"/>
                 </div>
             </div>
         </div>
