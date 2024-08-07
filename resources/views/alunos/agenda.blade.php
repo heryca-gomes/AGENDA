@@ -4,7 +4,7 @@
     <div class="card card-body">
         <div class="col-md-12">
             <div class="row">
-                <h2 class="text-center">Horários agendados</h2>
+                <h2 class="text-center">Minhas agenda</h2>
             </div>
             <hr>
             <div class="row">
