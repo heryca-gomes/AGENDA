@@ -55,6 +55,7 @@
                         <tr>
                             <th>Data</th>
                             <th>Horário</th>
+                            <th>Status</th>
                             <th>Remover</th>
                         </tr>
                     </thead>
@@ -72,6 +73,15 @@
                             <tr>
                                 <td>{{ $horario->data }}</td>
                                 <td>{{ $horario->horario }}</td>
+                                <td>
+                                    @if($horario->status == 1)
+                                        <strong class="text-success">DISPONÍVEL</strong>
+                                    @elseif($horario->status == 2)
+                                        <strong class="text-danger">AGENDADO</strong>
+                                    @elseif($horario->status == 5)
+                                        <strong class="text-warning">CANCELADO</strong>
+                                    @endif
+                                </td>
                                 <td></td>
                             </tr>
                         @endforeach

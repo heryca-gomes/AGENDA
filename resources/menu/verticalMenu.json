@@ -41,6 +41,14 @@
             "visibilidade": 2
         },
         {
+            "url": "/servidores/alunos/show",
+            "name": "Alunos",
+            "icon": "menu-icon tf-icons mdi mdi-account-outline",
+            "slug": "auth-register-basic",
+            "target": "",
+            "visibilidade": 2
+        },
+        {
             "url": "/alunos/minha-agenda",
             "name": "Minha agenda",
             "icon": "menu-icon tf-icons mdi mdi-account-outline",

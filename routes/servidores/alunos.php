@@ -1,6 +1,7 @@
 <?php
-Route::prefix('alunos')->group(function(){
-    Route::get('show', function(){
-        return view('servidores.alunos.index');
-    });
+
+use App\Http\Controllers\Servidores\AlunosController;
+
+Route::controller(AlunosController::class)->prefix('alunos')->group(function(){
+    Route::get('show', 'show')->name('servidores.alunos.show');
 });
