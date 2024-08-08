@@ -36,7 +36,7 @@
                                     <td>{{ $aluno->curso->descricao}}</td>
                                     <td>{{ $aluno->codigo_matricula }}</td>
                                     <td>
-                                        <a href="" class="btn btn-primary">Prontuário</a>
+                                        <a href="{{ route('servidores.prontuario.show', $aluno->id) }}" class="btn btn-primary">Prontuário</a>
                                     </td>
                                 </tr>
                             @endforeach

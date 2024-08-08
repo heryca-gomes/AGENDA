@@ -7,7 +7,7 @@
   <!-- ! Hide app brand if navbar-full -->
     @if(!isset($navbarFull))
     <div class="app-brand demo">
-        <a href="{{url('/')}}" class="app-brand-link">
+        <a href="#" class="app-brand-link">
             <img src="{{asset('assets/img/logo.png')}}" alt="brand" class="app-brand-logo" style="width: 80%">
         </a>
 

@@ -35,4 +35,9 @@ class Aluno extends Model
     {
         return $this->belongsTo(Curso::class, 'curso_id');
     }
+    
+    public function prontuario()
+    {
+        return $this->belongsTo(Prontuario::class, 'aluno_id');
+    }
 }
