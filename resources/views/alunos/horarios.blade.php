@@ -33,6 +33,11 @@
                                             <div class="modal-body">
                                                 <div class="row">
                                                     <div class="col-md-12">
+                                                    <p><strong>Prezado(a) aluno(a):</strong></p>
+                                                <ul style="text-align: left;">
+                                                    <li>Agende ou cancele o atendimento com pelo menos 2 horas de antecedência.</li>
+                                                    <li>A duração da consulta é de 50 minutos.</li>
+                                                </ul>
                                                         <p>
                                                             Confirmar o agendamento de consulta em <strong>{{ $agenda->data }} as {{ $agenda->horario }}</strong>?
                                                         </p>
